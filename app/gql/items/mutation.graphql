@@ -1,0 +1,36 @@
+mutation AddItem($item: ItemCreateManyInput!) {
+    addItem(Item: $item) {
+        item_title
+        img_url
+        bid
+        keywords
+    }
+}
+
+mutation ChangeUseYn($item: ItemCreateManyInput!) {
+    changeUseYn(Item: $item) {
+        use_yn
+        item_id
+        upd_date
+        keywords
+        item_title
+        ins_date
+        img_url
+        del_yn
+        bid
+    }
+}
+
+mutation DeleteItem($item: ItemWhereUniqueInput!) {
+    deleteItem(Item: $item) {
+        item_id
+        img_url
+        item_title
+        keywords
+        bid
+        use_yn
+        ins_date
+        upd_date
+        del_yn
+    }
+}

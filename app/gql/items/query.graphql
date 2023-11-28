@@ -1,0 +1,14 @@
+query getItemList {
+    item_list {
+        item_id
+        img_url
+        item_title
+        keywords
+        bid
+        use_yn
+        ins_date
+        upd_date
+        del_yn
+    }
+}
+

@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+    html, body {
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+}
+
+.bg-overlay {
+    position: fixed; /* fixed를 사용하여 스크롤에 따라 따라다니지 않도록 합니다. */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #666666 ;
+    z-index:1;
+    opacity:.50;
+}
+
+.lotte-on-bg-color{
+    background-color: #e60012
+}
+
+.sidebar-bg-color{
+    background-color: #212121;
+}
+
+
+@font-face {
+    font-family: "Noto Sans KR";
+    src: url("/fonts/NotoSansKR-Regular.ttf") format("truetype");
+}
